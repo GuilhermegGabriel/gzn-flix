@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6cde816448.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/atropos.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Flix</title>
+
+
+</head>
+<body>
+    <header>
+        <nav class="animate_animated animate_bounce">
+            <div class="logo">
+                <img class="logo_image" src="./image/logo2.png" alt="logo">
+                <h6 class="logo_titulo">Movies</h6>
+            </div>
+            <ul class="links">
+                <li class="home"> <a class="home" href="">Home</a><hr></li>
+                <li><a href="">Filmes</a></li>
+                <li><a href="">Séries</a></li>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Preço</a></li>
+                <li><a href="">Sobre</a></li>    
+            </ul>
+            <ul>
+                <li> <i class="fa-solid fa-magnifying-glass"></i></li>
+                <li> <i class="fa-solid fa-user"></i></li>
+                <li> <i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </nav>
+        <h1 class="animate_animated animate_backInLeft">Descubra <br>Conecte-se e emocione-se</h1>
+        <h2 class="animate_animated animate_backInLeft">Encontre os lançamentos de filmes imperdíveis</h2>
+        <ul class="btn animate_animated animate_bakcInLeft">
+            <li class="btn_start"><a href="">Começar</a></li>
+            <li class="btn_plan"><a href="">Planos</a></li>
+        </ul>
+
+        
+    </header>
+    <main>
+        <section class="categorias_titulo">
+            <h3 class="caracteristicas_titulo">Principais Características</h3>
+            <div class="caracteristicas_bloco1">
+                <h4>Experiência imersiva e personalizada.</h4>
+                <p>Oferecemos uma experiência de usuário envolvente e personalizada.</p>
+            </div>
+            <div class="caracteristicas_bloco2">
+            <h4>Navegação intuitiva e design responsivo.</h4>
+            <p>Levamos a sério a beleza e intuitividade do nosso site e filmes.</p>
+            </div>
+            <div class="caracteristicas_bloco3">
+                <h4>Conteúdo de alta qualidade e atualizado</h4>
+                <p>Descubra o que está em alta no momento.</p>
+            </div>
+            <div class="caracteristicas_bloco4">
+                <h4>Interação e engajamento com a Comunidade</h4>
+                <p>Temos uma comunidade ativa e engajada, que compartilha opniões.</p>
+            </div>
+        </section>
+        <section class="movie">
+            <h1 class="movie_title">Filmes mais aclamados e desejados do momento.</h1>
+
+                <div class="atropos my-atropos1">
+                    <!-- scale container(required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <img src="./image/101-curiosidades-sobre-game-of-thrones-1200x675.jpg" alt="got">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="atropos my-atropos2">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <img src="./image/Animais-Fantasticos-3-Novas-projecoes-indicam-fracasso-do-filme-nas-bilheterias-dos-EUA.jpg" alt="fantasticos">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos3">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <img src="./image/aquaman.jpeg" alt="Aquaman">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos4">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <img src="./image/avatar.jpeg" alt="Avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="atropos my-atropos5">
+                    <!-- scale container (required) -->
+                    <div class="atropos-scale">
+                        <!-- rotate container (required) -->
+                        <div class="atropos-rotate">
+                            <!-- inner container (required) -->
+                            <div class="atropos-inner">
+                                <img src="./image/3724880-raised-by-wolves-hbo-max.jpg" alt="lobos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <h6>Produzido e desenvolvido por Guilherme Gabriel e Diogo.</h6>
+
+    </footer>
+
+    <script src="./js/atropos.min.js"></script>
+    <script>
+        const myAtropos1 = Atropos({
+            el: '.my-atropos1',
+            activeOffset: 20,
+        shadowScale: 1.65,
+        rotateXMax: 35,
+        rotateYMax: 35,
+        stretchZ: 15,
+        stretchY: 15,
+        shadow: true,
+        shadowOffset: 40,
+        shadowScale: 1,
+        highlight: true
+
+    });
+
+    const myAtropos2 = Atropos({
+        el: '.my-atropos2',
+        activeOffset: 70,
+    shadowScale: 1.05,
+    rotateYMax: 35,
+    rotateXMax: 35,
+    stretchZ: 15,
+    stretchX: 20,
+    stretchY: 25,
+    shadow: true,
+    shadowOffset: 40,
+    shadowScale: 1,
+    highlight: true
+
+    })
+
+    const myAtropos3 = Atropos({
+        el: '.my-atropos3',
+        activeOffset: 70,
+    shadowScale: 1.05,
+    rotateXMax: 30,
+    rotateYMax: 30,
+    stretchZ: 15,
+    stretchX: 20,
+    stretchY: 25,
+    shadow: true,
+    shadowOffset: 40,
+    shadowScale: 1,
+    highlight: true
+    })
+
+    const myAtropos4 = Atropos({
+        el: '.my-atropos4',
+        activeOffset: 70,
+    shadowScale: 1.05,
+    rotateXMax: 30,
+    rotateYMax: 30,
+    stretchZ: 15,
+    stretchX: 20,
+    stretchY: 25,
+    shadow: true,
+    shadowOffset: 40,
+    shadowScale: 1,
+    highlight: true
+    })
+
+    const myAtropos5 = Atropos({
+        el: '.my-atropos5',
+        activeOffset: 70,
+    shadowScale: 1.05,
+    rotateXMax: 30,
+    rotateYMax: 30,
+    stretchZ: 15,
+    stretchX: 20,
+    stretchY: 25,
+    shadow: true,
+    shadowOffset: 40,
+    shadowScale: 1,
+    highlight: true
+    })
+
+    const myAtropos6 = Atropos({
+        el: '.my-atropos6',
+        activeOffset: 70,
+    shadowScale: 1.05,
+    rotateXMax: 30,
+    rotateYMax: 30,
+    stretchZ: 15,
+    stretchX: 20,
+    stretchY: 25,
+    shadow: true,
+    shadowOffset: 40,
+    shadowScale: 1,
+    highlight: true
+    })
+
+    </script>
+    <script src="https://unpkg.com/scrollreveal">
+    </script>
+<script>
+    scrollReveal().reveal('.caracteristicas_bloco1',{
+        easing: 'ease-out',
+        scale: 0.85,
+        rotate: {
+            x: 22,
+        },
+        delay: 500
+    })
+
+    scrollReveal().reveal('.caracteristicas_bloco2',{
+        easing: 'ease-out',
+        scale: 0.85,
+        rotate: {
+            x: 22,
+        },
+        delay: 500
+    })
+
+    scrollReveal().reveal('.caracteristicas_bloco3',{
+        easing: 'ease-out',
+        scale: 0.85,
+        rotate: {
+            x: 22,
+        },
+        delay: 500
+    })
+
+    scrollReveal().reveal('.caracteristicas_bloco4',{
+        easing: 'ease-out',
+        scale: 0.85,
+        rotate: {
+            x: 22,
+        },
+        delay: 500
+    })
+
+    scrollReveal().reveal('.caracteristicas_bloco5',{
+        easing: 'ease-out',
+        scale: 0.85,
+        rotate: {
+            x: 22,
+        },
+        delay: 500
+    })
+
+    scrollReveal().reveal('.caracteristicas_bloco6',{
+        easing: 'ease-out',
+        scale: 0.85,
+        rotate: {
+            x: 22,
+        },
+        delay: 500
+    })
+    </script>
+</html>
+</body>
