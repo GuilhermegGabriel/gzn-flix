@@ -1,130 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;500;700&family=Poppins:ital,wght@1,500&family=Tilt+Neon&display=swap%27');
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;500;700&family=Poppins ital,wght@1,500&family=Tilt+Neon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
 
 header{
-    background-image: url("../image/filmes.png");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-image: url(../images/filmes.png);
     display: grid;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(10, 1fr);
+    background-size: cover;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    font-family: 'Poppins', sans-serif;
+
 }
-
-
-h1{
-    font-family: "Noto Sans";
-    font-size: 4rem;
-    color: white;
-    grid-row-start: 5;
-    grid-column: 2 /8;
-}
-
-h2{
-    font-family: "Inter";
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: white;
-    grid-row-start: 7;
-    grid-column: 2 /8;
-}
-
 nav{
-    grid-column: 1/11;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-}
-
-.logo{
-    width: 150px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    grid-row-start: 1;
+    grid-column: 1/13;
+    font-family: 'Poppins', sans-serif;
 }
-
-.logo_image{
+li{
+    display: inline-block;
+    margin-right: 8px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
     width: 92px;
     height: 72px;
 }
-
-.logo_titulo{
-    font-family: "Noto Sans";
-    color: white;
-    font-size: 1.3rem;
+.logo_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
 }
-
-li{
-    margin-right: 16px;
-    display: inline-block;
+h6{
+    font-size: 18px;
     color: white;
-}
+    font-family: 'Bebas Neue', cursive;
 
-a{
-    font-family: "Noto Sans";
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-    font-size: 1.3rem;
 }
-
 .home{
     color: #fd0178;
-    display: inline-flex;
-    flex-direction: column;
-    font-weight: bold;
 }
-
 hr{
+    display: flex;
     margin-top: 4px;
-    width: 42px;
-    display: inline;
     border-color: #fd0178;
 }
-
+h1{
+    grid-row-start: 3;
+    grid-column: 2/6;
+    font-size: 36px;
+    color: white;
+}
+h2{
+    font-weight: 300;
+    font-size: 18px;
+    grid-row-start: 4;
+    grid-column: 2/8;
+    color: white;
+}
 .btn{
-    grid-row-start: 8;
-    grid-column: 2 /8;
+    grid-row-start: 5;
+    grid-column-start: 2;
     display: flex;
 }
-
 .btn_start{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #fd0178;
-    border-radius: 40px;
     width: 200px;
     height: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .btn_plan{
     background-color: #252c57;
-    border-radius: 40px;
     width: 200px;
     height: 50px;
+    border-radius: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 400px){
-    .links{
+@media only screen and (max-width: 800px){
+    .menu_links{
         display: none;
     }
     h1{
-        font-size: 2rem;
+        font-size: 24px;
     }
     h2{
-        font-size: 1.3rem;
+        font-size: 14px;
     }
-    h1{
-        grid-row-start: 4;
-        grid-column: 2 /8;
-    }
-    h2{
-        grid-row-start: 6;
-        grid-column: 2 /8;
+    .btn_start, .btn_plan{
+        width: 100px;
+        height: 50px;
     }
 }

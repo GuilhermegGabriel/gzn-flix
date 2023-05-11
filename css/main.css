@@ -1,24 +1,8 @@
-@import "header.css";
-@import "categorias_titulo.css";
-@import "movie.css";
-@import "rodape.css";
-
-html{
-    font-size: 16px;
-}
+@import "./header.css";
+@import "./caracteristicas.css";
+@import "./filmesPrincipais.css";
+@import "./footer.css";
 *{
-    margin: 0;
     padding: 0;
-}
-
-@media only screen and (max-width: 400px){
-    header{
-        width: auto;
-    }
-    main{
-        width: auto;
-    }
-    .movie{
-        width: auto;
-    }
+    margin: 0;
 }
